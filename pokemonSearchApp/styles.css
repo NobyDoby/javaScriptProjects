@@ -1,0 +1,152 @@
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #192281;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+
+#pokedex-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+#search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  width: 200px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+#pokemon-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#pokemon-info > div {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+#pokemon-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#pokemon-id {
+  font-size: 18px;
+  color: #666;
+}
+
+#sprite {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#sprite img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px; /* Adjusted for larger image */
+}
+
+#weight,
+#height {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#height {
+  margin-left: 10px;
+}
+
+#types {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pokemon-type {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px; /* Added margin */
+  font-size: 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.grass {
+  background-color: #78c850;
+  color: #fff;
+}
+
+.poison {
+  background-color: #a040a0;
+  color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f0f0f0;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  #pokemon-info > div {
+    flex: 1 1 50%;
+    text-align: left;
+  }
+}
