@@ -1,4 +1,4 @@
-/* Reset styles */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -88,7 +88,7 @@ h1 {
 #sprite img {
   max-width: 100%;
   height: auto;
-  max-height: 300px; /* Adjusted for larger image */
+  max-height: 300px; 
 }
 
 #weight,
@@ -109,7 +109,7 @@ h1 {
 .pokemon-type {
   display: inline-block;
   padding: 5px 10px;
-  margin: 5px; /* Added margin */
+  margin: 5px; 
   font-size: 14px;
   border-radius: 20px;
   text-transform: uppercase;
@@ -143,7 +143,6 @@ table th {
   background-color: #f0f0f0;
 }
 
-/* Responsive adjustments */
 @media (min-width: 768px) {
   #pokemon-info > div {
     flex: 1 1 50%;
